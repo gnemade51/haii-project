@@ -1,0 +1,108 @@
+body {
+    max-width: 1200px;
+    font-family: 'OpenSans', sans-serif;
+    background-color: #F5F5F5;
+    margin: auto;
+    text-align: center;
+    overflow: scroll;
+}
+
+.upload_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content {
+    text-align: left;
+}
+
+.homepage_heading {
+    font-size: 82px;
+    font-weight: bold;
+    color: #6C757D;
+    margin: 0; 
+}
+
+.homepage_description {
+    font-size: 32px;
+    color: #333; 
+}
+
+.banner {
+    width: 600px;
+}
+
+form {
+    margin-top: 30px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.choosefile {
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.upload {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+}
+
+.upload:hover {
+    background-color: #0056b3;
+}
+
+.table {
+    display: flex;
+    /* padding: 30px; */
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+.image_display {
+    width: 500px;
+    padding: 50px;
+}
+
+.image {
+    width: 400px;
+}
+
+.information {
+    width: 800px;
+    margin: auto;
+}
+
+.information_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6C757D; 
+}
+
+.information_content {
+    font-size: 16px;
+}
+
+.disclaimer {
+    font-size: 12px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- <script defer src="../static/js/results.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Color Time Machine</title>
+</head>
+<body>
+    <div class="head">
+        <h1 class="homepage_heading">Color Time Machine</h1>
+        <p class="homepage_description">Here are your results!</p>
+    </div>
+    <div class="table">
+        <div class="image_display">
+            <h2 class="label">Original Image</h2>
+            <img class="image" src="{{ url_for('get_uploaded_file', filename=original_image) }}" alt="Original Image">
+            <!-- <img class="image" src="../uploads/MM_2.jpg" alt="Original Image"> -->
+        </div>
+        <div class="image_display">
+            <h2 class="label">Colorized Image</h2>
+            <!-- <img class="image" src="../result_images/MM_2.jpg" alt="Colorized Image"> -->
+            <img class="image" src="{{ url_for('get_result_file', filename=result_image) }}" alt="Colorized Image">
+        </div>
+    </div>
+    <div class="information">
+        <h2 class="information_title">What did the model just do? Was it Magic?</h2>
+        <p class="information_content">In our web application, the colorization process is powered by the DeOldify model, which employs advanced deep learning techniques. The model has been trained on a diverse dataset of black and white images, learning intricate patterns and relationships between grayscale inputs and corresponding colored versions. When you upload a black and white image, the model utilizes its extensive knowledge to predict and generate plausible colors for different elements in the picture. It does this by recognizing patterns, textures, and contextual information present in the grayscale image, inferring the most likely color choices based on its training data. The accuracy of the results is a testament to the model's ability to generalize from its training set, providing you with vibrant and realistic colorizations for your black and white photos.</p>
+    </div>
+    <!-- <div class="slider-container">
+        <label for="render-factor-slider">Render Factor:</label>
+        <input type="range" min="1" max="45" value="{{ render_factor }}" class="slider" id="render-factor-slider">
+        <span id="render-factor-value">{{ render_factor }}</span>
+    </div> -->
+</body>
+</html>

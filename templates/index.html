@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <link rel="stylesheet" href="../static/css/style.css"></link>
+    <script defer src="../static/js/results.js"></script>
+
+    <title>Color Time Machine</title>
+</head>
+<body>
+    <div class="head">
+        <h1 class="homepage_heading">Color Time Machine</h1>
+        <p class="homepage_description">Bring you old photos to life using colors!</p>
+        <img class="banner" src="../static/img/banner.png" alt="Black and white to color image" />
+    </div>
+    <div class="upload_section">
+        <form method=post enctype=multipart/form-data>
+            <input class="choosefile" type=file name=file>
+            <input class="upload" type=submit value=Upload>
+        </form>
+    </div>
+    <div class="information">
+        <h2 class="information_title">How does it work?</h2>
+        <p class="information_content">Select your black and white picture and click on upload.</p>
+        <div class="content">
+            <p class="disclaimer">Note:</p>
+            <p class="disclaimer">1. We do not store any of your personal data, all uploaded images are purged automatically once rendered.</p>
+            <p class="disclaimer">2. Please note that while the DeOldify model is designed to provide accurate and realistic colorizations, there may be instances where the generated images may not precisely reflect the original colors or may introduce artistic interpretations. Factors such as the complexity of the input image, variations in training data, and the inherent limitations of AI models can contribute to variations in the results. We recommend using the colorized images for creative and aesthetic purposes, understanding that the predictions are based on the model's learned patterns and may not always represent historical or factual accuracy.</p>
+        </div>
+    </div> 
+</body>
+</html>
